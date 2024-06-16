@@ -31,7 +31,7 @@ The schema you need to adhere to is as follows:
 ```json
 {
     "UserID": null,
-    "Role": "JobSeeker",
+    "Role": "",
     "Email": "",
     "DisplayName": "",
     "Gender": null,
@@ -66,6 +66,7 @@ Populate JSON: Fill in the JSON object with the extracted information. If a fiel
 Skills List: Create a list of skills from the "Technical Skills" section of the CV.
 Experience Details: Extract company name, role, and duration (if available) from the "Working Experiences" section. If the duration is not explicitly stated, make a reasonable estimate based on the context.
 Education Details: Extract degree, institution, and graduation year (if available) from the "Education" section.
+Role: Extract the Role for which position the candidate applies
 Output: Return the completed JSON object as your final output.
     
         """
